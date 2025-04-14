@@ -364,7 +364,7 @@ header .dropdown_menu .action_btn{
 }
 
 #somos-in .img-container {
-    background-image: url("media/pareja.jpg");
+    background-image: url("assets/pareja.jpg");
     background-size: cover;
     background-position: center center;
     width: 400px;
