@@ -548,47 +548,47 @@ strong{
 
 /* PREGUNTAS */
 
+/* 🔹 Estilos generales */
 #answer {
     text-align: center;
-    height: 85vh;
+    min-height: 85vh; /* Usamos min-height en lugar de height fija */
+    padding: 40px 20px;
 }
 
 .carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
     position: relative;
-    width: 100%;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
-    
+    padding: 0; /* Asegura que no haya espacio adicional */
 }
 
 .carousel {
     display: flex;
     width: 100%;
-    gap: 5%;
     transition: transform 0.5s ease-in-out;
 }
 
+/* 🔹 Slides */
 .slide {
-    display: flex;
-    justify-content: space-between;
     flex: 0 0 100%;
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    gap: 20px; /* Espacio entre los elementos */
 }
 
-/* Columnas por defecto */
+/* 🔹 Columnas (preguntas) */
 .columna {
     width: 31%;
-    text-align: center;
+    max-width: 350px;
     background-color: #22347b;
-    max-width: 390px;
-    height: auto;
     padding: 25px;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
+    text-align: center;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+/* 🔹 Flechas de navegación */
 .arrow {
     position: absolute;
     width: 100%;
@@ -601,7 +601,7 @@ strong{
 
 #answer .arrow button {
     transition: 0.3s;
-    font-size: 3.5em;
+    font-size: 3em;
     color: rgb(182, 146, 25);
     background-color: transparent;
     border: none;
@@ -611,6 +611,33 @@ strong{
 #answer .arrow button:hover {
     color: rgb(131, 100, 0);
 }
+
+/* 🔹 🌎 RESPONSIVIDAD */
+@media (max-width: 992px) {
+    .slide {
+        flex-wrap: wrap; /* Permite distribución flexible */
+    }
+
+    .columna {
+        width: 45%; /* Ajusta a dos preguntas por slide */
+    }
+}
+
+@media (max-width: 576px) {
+    .slide {
+        flex-direction: column; /* Preguntas en una sola columna */
+        align-items: center;
+    }
+
+    .columna {
+        width: 80%; /* Ajuste para móviles */
+    }
+
+    .arrow button {
+        font-size: 2.5em; /* Reduce el tamaño de las flechas */
+    }
+}
+
 
 #answer h2 {
     color: rgb(189, 161, 69);
