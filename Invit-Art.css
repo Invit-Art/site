@@ -906,20 +906,23 @@ button.sol:hover {
     #show .item .content {
         position: absolute;
         top: 40%;
-        left: 60px;
         width: 83%;
         transform: translate(0, -50%);
-        text-align: right;
+        left: auto;
+        right: 10px; /* Mueve el contenido a la derecha */
+        text-align: right;    
     }
     
     #show .content .web {
-        font-size: 2.7em;
-        left: -13%;
+        font-size: 2.5em;
+        left: auto;
+        right: 0px; /* Mueve el contenido a la derecha */
+        text-align: right;    
     }
     
     #show .content .name {
         font-size: 40px;
-        right: -50%;
+        right: 0; /* Ajusta para que esté alineado */
     }
     
     #show .content .des {
@@ -928,9 +931,9 @@ button.sol:hover {
         margin-bottom: 20px;
         font-size: 17px;
         position: relative;
-        right: 1%;
         text-align: right;
     }
+    
     
     #show .content button {
         padding: 10px 15px;
@@ -942,6 +945,12 @@ button.sol:hover {
         width: 100px;
         height: 200px;
         top: 71%;
+    }
+
+    #show .content h2,
+    #show .content p,
+    #show .content button {
+        text-align: right;
     }
 
     #show .slide .item:nth-child(3) {
@@ -994,19 +1003,30 @@ button.sol:hover {
         margin: 30px;
     }
 
-    #beneficios {
-        height: auto;
-        padding: 50px 20px;
+    #nuestros-planes h2 {
+        font-size: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+    
+    #beneficios {
+        min-height: 300px;
+        padding: 50px 20px;
+    }    
 
     #beneficios .container2 {
-        flex-direction: column; /* Se vuelven en fila */
+        display: flex; /* Necesario para aplicar flexbox */
+        flex-direction: column;
         row-gap: 20px;
     }
+    
 
     #beneficios .esfera {
+        width: 100%;
         max-width: 250px;
     }
+    
 
     #beneficios h2 {
         font-size: 2.5em;
@@ -1020,19 +1040,10 @@ button.sol:hover {
         font-size: 1.8em;
         margin-bottom: 30px;
     }
-
-    .slide {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .columna {
-        width: 80%;
-    }
     
     /* Cambio a columna */
     #pool {
-        height: 60vh;
+        height: 70vh;
     }
     
     #pool .containerpol {
