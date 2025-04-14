@@ -39,17 +39,17 @@
 
 @media(max-width: 576px){
     .float{
-        font-size: 60px;
-        width: 90px;
-        height: 90px;
-        bottom: 40px;
+        font-size: 40px;
+        width: 70px;
+        height: 70px;
+        bottom: 20px;
         right: 20px;
         border-radius: 60px;
 
     }
     
     .float i {
-        font-size: 60px;
+        font-size: 45px;
     }
     
     .float p {
