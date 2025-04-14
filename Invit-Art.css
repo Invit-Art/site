@@ -92,7 +92,7 @@ header .navbar .links{
 
 header .navbar .toggle_btn{
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.5rem;
     cursor: pointer;
     display: none;
 }
@@ -139,7 +139,7 @@ header .dropdown_menu{
 }
 
 header .dropdown_menu.open{
-    height: 220px;
+    height: 250px;
 }
 
 header .dropdown_menu li{
@@ -323,7 +323,7 @@ header .dropdown_menu .action_btn{
     transition: 0.3s;
     font-size: 20px;
     padding: 6px 20px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border: none;
     color: white;
     background-color: rgb(182, 146, 25);
     cursor: pointer;
@@ -364,7 +364,7 @@ header .dropdown_menu .action_btn{
 }
 
 #somos-in .img-container {
-    background-image: url("assets/pareja.jpg");
+    background-image: url("media/pareja.jpg");
     background-size: cover;
     background-position: center center;
     width: 400px;
@@ -891,13 +891,21 @@ button.sol:hover {
     }
 
     header a{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight: lighter;
+    }
+
+    header .action_btn{
+        font-size: 1.5rem;
+    }
+    
+    header .action_btn i{
+        font-size: 2rem;
     }
 
     #show .item .content {
         position: absolute;
-        top: 45%;
+        top: 40%;
         left: 60px;
         width: 83%;
         transform: translate(0, -50%);
@@ -905,8 +913,8 @@ button.sol:hover {
     }
     
     #show .content .web {
-        font-size: 3.3em;
-        left: -5%;
+        font-size: 3em;
+        left: -15%;
     }
     
     #show .content .name {
@@ -915,26 +923,33 @@ button.sol:hover {
     }
     
     #show .content .des {
-        max-width: 200px;
+        max-width: 500px;
         margin-top: 5px;
         margin-bottom: 20px;
         font-size: 17px;
         position: relative;
-        right: -200px;
+        right: 1%;
         text-align: right;
     }
     
     #show .content button {
         padding: 10px 15px;
-        font-size: 1.2em;
+        font-size: 1.5em;
         font-weight: bold;
     }
 
-    #show .slide .item:nth-child(3),
-    #show .slide .item:nth-child(4),
-    #show .slide .item:nth-child(5),
-    #show .slide .item:nth-child(6) {
-        display: none;
+    #show .slide .item {
+        width: 100px;
+        height: 200px;
+        top: 71%;
+    }
+
+    #show .slide .item:nth-child(3) {
+        left: 65%;
+    }
+    
+    #show .slide .item:nth-child(4) {
+        left: calc(40% + 215px);
     }
 
     #somos-in .container {
@@ -1017,7 +1032,7 @@ button.sol:hover {
     
     /* Cambio a columna */
     #pool {
-        height: 70vh;
+        height: 60vh;
     }
     
     #pool .containerpol {
@@ -1030,6 +1045,5 @@ button.sol:hover {
     
     #desing {
         display: none;
-    }
-    
+    }   
 }
