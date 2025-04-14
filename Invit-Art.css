@@ -896,7 +896,7 @@ button.sol:hover {
     }
 
     header .action_btn{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
     header .action_btn i{
@@ -913,8 +913,8 @@ button.sol:hover {
     }
     
     #show .content .web {
-        font-size: 3em;
-        left: -15%;
+        font-size: 2.7em;
+        left: -13%;
     }
     
     #show .content .name {
@@ -934,7 +934,7 @@ button.sol:hover {
     
     #show .content button {
         padding: 10px 15px;
-        font-size: 1.5em;
+        font-size: 1.2em;
         font-weight: bold;
     }
 
@@ -1045,5 +1045,6 @@ button.sol:hover {
     
     #desing {
         display: none;
-    }   
+    }
+    
 }
