@@ -382,8 +382,6 @@ strong{
 /* Planes */
 
 #nuestros-planes {
-    height: 180vh;
-    background-color: #595959;
     max-width: 100vw; /* Evita que la sección supere el ancho de la pantalla */
     overflow: hidden; /* Oculta cualquier contenido que desborde */
 }
