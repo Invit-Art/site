@@ -407,6 +407,10 @@ strong{
     animation: animate 1s ease-in-out 1 forwards, goldenScroll 10s infinite linear;
 }
 
+#nuestros-planes h2.responsive {
+    display: none;
+}
+
 #nuestros-planes h3 {
     margin-bottom: 50px;
     font-size: 2em;
@@ -1004,7 +1008,11 @@ button.sol:hover {
     }
 
     #nuestros-planes h2 {
-        font-size: 30px;
+        display: none;
+    }
+
+    #nuestros-planes h2.responsive {
+        font-size: 3em;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
