@@ -793,7 +793,7 @@ button.sol:hover {
     #somos-in .img-container {
         width: 90%; /* La imagen ocupará todo el ancho */
         height: 700px; /* Ajusta la altura */
-        background-image: url("media/pareja.jpg");
+        background-image: url("assets/pareja.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1027,7 +1027,7 @@ button.sol:hover {
     #somos-in .img-container {
         width: 90%; /* La imagen ocupará todo el ancho */
         height: 500px; /* Ajusta la altura */
-        background-image: url("media/pareja.jpg");
+        background-image: url("assets/pareja.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
